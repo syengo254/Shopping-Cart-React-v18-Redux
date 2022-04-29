@@ -1,7 +1,9 @@
+import { nanoid } from "nanoid";
+
 export function getProducts(){
     const products = [
         {
-            id: 1,
+            id: nanoid(),
             category: 2,
             subcategory: 202,
             rating: 4,
@@ -17,7 +19,7 @@ export function getProducts(){
             stock: 9,
         },
         {
-            id: 2,
+            id: nanoid(),
             category: 2,
             subcategory: 201,
             rating: 5,
@@ -33,7 +35,7 @@ export function getProducts(){
             stock: 100,
         },
         {
-            id: 3,
+            id: nanoid(),
             category: 1,
             subcategory: 101,
             rating: 1,
@@ -49,7 +51,7 @@ export function getProducts(){
             stock: 8,
         },
         {
-            id: 4,
+            id: nanoid(),
             category: 1,
             subcategory: 102,
             rating: 4,
@@ -65,7 +67,7 @@ export function getProducts(){
             stock: 2,
         },
         {
-            id: 5,
+            id: nanoid(),
             category: 3,
             subcategory: 301,
             rating: 4,
@@ -81,7 +83,7 @@ export function getProducts(){
             stock: 0,
         },
         {
-            id: 6,
+            id: nanoid(),
             category: 1,
             subcategory: 103,
             rating: 3,

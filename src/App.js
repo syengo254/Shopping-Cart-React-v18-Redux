@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main className='flex md:flex-row'>
+      <main className='flex md:flex-row mx-4'>
         <ProductsGrid />
         <ProductSlip />
       </main>
