@@ -1,4 +1,4 @@
-## React.JS + Redux + TailwindCSS App
+## React.JS + Redux + TailwindCSS Shopping Cart App
 
  - I created this app to demostrate a frontend dev work using *React, Redux and TailwindCSS* stack for an app that can:
 1. Fetch products from an API backend.

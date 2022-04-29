@@ -1,17 +1,13 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header/Header';
-import ProductsGrid from './components/Products/ProductsGrid';
-import ProductSlip from './components/ProductSlip/ProductSlip';
+import Header from './components/Header/Header'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <main className='flex md:flex-row mx-4'>
-        <ProductsGrid />
-        <ProductSlip />
-      </main>
+      <Outlet />
     </div>
   );
 }
