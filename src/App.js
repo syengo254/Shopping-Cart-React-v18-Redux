@@ -2,12 +2,16 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import ProductsGrid from './components/Products/ProductsGrid';
+import ProductSlip from './components/ProductSlip/ProductSlip';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <ProductsGrid />
+      <main className='flex md:flex-row'>
+        <ProductsGrid />
+        <ProductSlip />
+      </main>
     </div>
   );
 }
