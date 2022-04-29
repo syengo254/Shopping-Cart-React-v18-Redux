@@ -1,34 +1,13 @@
-import axios from 'axios';
-import React, { useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { formatAmount } from '../../Helpers/helpers';
-import { useDispatch } from 'react-redux';
-import { emptyCart } from '../../features/cartSlice';
 
 const SlipFooter = ({totalCost, products}) => {
-    const [message, setMessage] = useState('');
-    const dispatch = useDispatch();
+    const navigate = useNavigate();
 
-
-    const checkOut = async () => {
+    const checkOut = () => {
         if(products.length){
-            const url = `http://localhost:9000/orders`;
-            const data = {
-                user: 'Customer One',
-                items: products.map( product => product.id ),
-            };
-            const response = await axios.post(url, data, { headers: {
-                'Content-Type': 'Application/json',
-            }});
-
-            const { success, msg } = response.data;
-
-            if(success === 1){
-                setMessage(`Your order has been received and will be delivered soon!` + msg);
-                dispatch(emptyCart());
-            }
-            else{
-                setMessage(message);
-            }
+            navigate('/checkout')
         }
     }
 
@@ -42,7 +21,6 @@ const SlipFooter = ({totalCost, products}) => {
             </span>
             </div>
             <div className='my-1 text-center border-t'>
-                { message.length ? <p>{ message }</p> : null }
                 <button
                     className='px-4 py-2 mt-4 font-semibold 
                         cursor-pointer border rounded-md bg-blue-900 

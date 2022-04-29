@@ -25,6 +25,9 @@ const cartSlice = createSlice({
                 if(quantity >= stock) return;
                 state.products[action.payload.id].quantity += 1;
             }
+            else if(action.payload.quantity === 0){
+                delete state.products[action.payload.id];
+            }
             else{
                 state.products[action.payload.id].quantity = action.payload.quantity;
             }

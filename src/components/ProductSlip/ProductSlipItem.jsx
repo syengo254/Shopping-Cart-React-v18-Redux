@@ -8,7 +8,7 @@ const ProductSlipItem = ({product, pos}) => {
     return ( 
         <li className='border-b py-2'>
             <div className='font-semibold relative flex items-start'>
-                { pos }. &nbsp; <span className='inline-block w-[220px] capitalize'>{ product.name }:</span>
+                { pos }. &nbsp; <span className='inline-block w-[220px] capitalize italic'>{ product.name }:</span>
                 <div className='absolute top-0 right-0'>
                     <a href='#rem' onClick={ e => {
                         e.preventDefault()
