@@ -31,6 +31,8 @@ const ProductItem = ({product}) => {
                 {
                     product.stock > 0 ? <div className="text-blue-700 mt-4">In stock</div> : <div className="text-red-500 mt-4">Out of stock</div>
                 }
+
+                { added && <span className='text-green-600 text-sm'>Added to cart</span>}
                 
             </div>
         </div> 

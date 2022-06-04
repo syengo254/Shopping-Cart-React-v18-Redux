@@ -10,7 +10,7 @@ export function getProducts(){
             name: "geisha herbal",
             meta: "100g",
             price: 50,
-            photo: "http://localhost/e-budget.com/images/products/geisha_new.jpg",
+            photo: "/images/products/geisha_new.jpg",
             store_details: {
                 id: 1,
                 photo: "uchumi.png",
@@ -26,7 +26,7 @@ export function getProducts(){
             name: "colgate toothpaste herbal",
             meta: "300ml",
             price: 99,
-            photo: "http://localhost/e-budget.com/images/products/colgate-herbal.jpg",
+            photo: "/images/products/colgate-herbal.jpg",
             store_details: {
                 id: 1,
                 photo: "uchumi.png",
@@ -42,7 +42,7 @@ export function getProducts(){
             name: "SONY DIGITAL CAMERA ZY90i",
             meta: "",
             price: 18400,
-            photo: "http://localhost/e-budget.com/images/products/SAMSUNG CAM.png",
+            photo: "/images/products/SAMSUNG CAM.png",
             store_details: {
                 id: 2,
                 photo: "Tuskys_logo.png",
@@ -58,7 +58,7 @@ export function getProducts(){
             name: "Sony Television LCD",
             meta: "42 Inch",
             price: 50000,
-            photo: "http://localhost/e-budget.com/images/products/Sony%20Television%20LCD.png",
+            photo: "/images/products/Sony%20Television%20LCD.png",
             store_details: {
                 id: 3,
                 photo: "shoprite.png",
@@ -74,7 +74,7 @@ export function getProducts(){
             name: "soko maize meal",
             meta: "2Kg",
             price: 130,
-            photo: "http://localhost/e-budget.com/images/products/soko.png",
+            photo: "/images/products/soko.png",
             store_details: {
                 id: 1,
                 photo: "uchumi.png",
@@ -90,7 +90,7 @@ export function getProducts(){
             name: "Von Sub-Woofer",
             meta: "2.1 Channel 1000W",
             price: 8400,
-            photo: "http://localhost/e-budget.com/images/products/Von%20Sub-Woofer%202.1.png",
+            photo: "/images/products/Von%20Sub-Woofer%202.1.png",
             store_details: {
                 id: 2,
                 photo: "Tuskys_logo.png",

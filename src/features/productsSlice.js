@@ -23,13 +23,13 @@ const productsSlice = createSlice({
         builder.addCase(fetchProducts.pending, (state, action) => {
             state.status = 'loading'
         })
-        .addCase(fetchProducts.fulfilled, (state, action) => {
-            state.products = action.payload;
-            state.status = 'idle';
-        })
-        .addCase(fetchProducts.rejected, (state, action) => {
-            state.status = 'error';
-        });
+            .addCase(fetchProducts.fulfilled, (state, action) => {
+                state.products = action.payload;
+                state.status = 'idle';
+            })
+            .addCase(fetchProducts.rejected, (state, action) => {
+                state.status = 'error';
+            });
     }
 });
 
